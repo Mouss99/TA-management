@@ -1,0 +1,402 @@
+*.container .content .btn:hover{
+    background: crimson;
+ }
+ 
+ .form-container{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    
+ }
+ 
+ .form-container form{
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px black;
+    background: #eee;
+    text-align: center;
+    width: 500px;
+ }
+ 
+ .form-container form h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color:#333;
+ }
+
+ .form-container form input{
+    padding:10px 15px;
+    font-size: 17px;
+    margin:8px 0;
+    background: #fff;
+ }
+ 
+ .form-container form .form-btn{
+    background: #fbd0d9;
+    color:crimson;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ 
+ .form-container form .form-btn:hover{
+    background: crimson;
+    color:#fff;
+ }
+ 
+ .form-container form p{
+    margin-top: 10px;
+    font-size: 20px;
+    color:#333;
+ }
+ 
+ .form-container form p a{
+    color:crimson;
+ }
+
+
+.logo {
+background: url(../media/mcgill_logo_white.jpg) no-repeat center left;
+width: 180px;
+height: 75px;
+margin: 18px 0 0 20px;
+display: inline-block;
+border-right: 1px solid #fff;
+}
+
+.header-background {
+width: 100%;
+height: 108px;
+background: #DC241F url(../media/mcgill_background.jpg) no-repeat top right;
+padding: 0;
+margin: 0;
+}
+
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+height:50px;
+background-color: #DC241F;
+color:#DC241F;
+text-align: center;
+}
+
+multiselect {
+   width: 200px;
+ }
+ 
+ .selectBox {
+   position: relative;
+ }
+ 
+ .selectBox select {
+   width: 100%;
+   font-weight: bold;
+ }
+ 
+ .overSelect {
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+ }
+ 
+ #Student_checkboxes {
+   display: none;
+   border: 1px #dadada solid;
+ }
+ 
+ #Student_checkboxes label {
+   display: block;
+ }
+ 
+ #Student_checkboxes label:hover {
+   background-color: #1e90ff;}
+
+
+ #Prof_checkboxes {
+   display: none;
+   border: 1px #dadada solid;
+ }
+ 
+ #Prof_checkboxes label {
+   display: block;
+ }
+ 
+ #Prof_checkboxes label:hover {
+   background-color: #1e90ff;}
+
+
+
+ #Ta_checkboxes {
+   display: none;
+   border: 1px #dadada solid;
+ }
+ 
+ #Ta_checkboxes label {
+   display: block;
+ }
+ 
+ #Ta_checkboxes label:hover {
+   background-color: #1e90ff;}
+
+ 
+.confirm-btn{
+    border: 3px solid black ;
+    color: #CC0000;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #fff;
+  }
+
+  .confirm-btn:hover {
+    background: crimson;
+    font-weight: bold;
+    color:#fff;
+  }
+
+  /* ######################## STAR RATING  ########################*/
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #fff;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #666;
+  }
+  
+  a {
+    color: #27ae60;
+  }
+  
+  a:focus,
+  a:hover,
+  a:visited {
+    color: #36d278;
+  }
+  
+  form {
+    margin: 0 auto 3rem;
+  }
+  
+  form:first-of-type {
+    margin-top: 3rem;
+  }
+  
+  fieldset {
+    margin: 0 auto;
+  }
+  
+  legend {
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type=radio] {
+    border: 3px solid black;
+  }
+  
+  .rating {
+    display: block;
+    position: relative;
+    width: 150px;
+    min-height: 60px;
+    padding: 0;
+    border: none;
+  }
+  
+  .rating > input {
+    position: absolute;
+    margin-right: -100%;
+    opacity: 0;
+  }
+  
+  .rating > input:checked ~ label,
+  .rating > input:focus ~ label {
+    background-position: 0 0;
+  }
+  
+  .rating > input:checked + label,
+  .rating > input:focus + label {
+    background-position: 0 -30px;
+  }
+  
+  .rating > input:hover ~ label {
+    background-position: 0 0;
+  }
+  
+  .rating > input:hover + label {
+    background-position: 0 -30px;
+  }
+  
+  .rating > input:hover + label:before {
+    opacity: 1;
+  }
+  
+  .rating > input:focus + label {
+    outline: 1px dotted #999;
+  }
+  
+  .rating .focus-ring {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    outline: 2px dotted #999;
+    pointer-events: none;
+    opacity: 0;
+  }
+  
+  .rating > .input-no-rate:focus ~ .focus-ring {
+    opacity: 1;
+  }
+  
+  .rating > label {
+    position: relative;
+    float: left;
+    width: 30px;
+    font-size: 0.1em;
+    color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 0 -30px; 
+  }
+  
+  .rating > label,
+  .rating > label:before {
+    height: 30px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAMAAABGivqtAAAAxlBMVEUAAACZmZn2viTHuJ72viOampqampr1viSampr3vySampqdnZ34wiX1vSSampr1vSOZmZmampr1viT2vSOampr2viT2viSampr2viSampr2vyX4vyWbm5v3vSSdnZ32wSadnZ36wCWcnJyZmZn/wSr/2ySampr2vSP2viSZmZn2vSSZmZn2vST2viSampr2viSbm5ubm5uZmZn1vSSampqbm5v2vSWampqampr3vSf5wiT5vyagoKD/xCmkpKT/yCSZmZn1vSO4V2dEAAAAQHRSTlMA+vsG9fO6uqdgRSIi7+3q39XVqZWVgnJyX09HPDw1NTAwKRkYB+jh3L6+srKijY2Ef2lpYllZUU5CKigWFQ4Oneh1twAAAZlJREFUOMuV0mdzAiEQBmDgWq4YTWIvKRqT2Htv8P//VJCTGfYQZnw/3fJ4tyO76KE0m1b2fZu+U/pu4QGlA7N+Up5PIz9d+cmkbSrSNr9seT3GKeNYIyeO5j16S28exY5suK0U/QKmmeCCX6xs22hJLVkitMImxCvEs8EG3SCRCN/ViFPqnq5epIzZ07QJJvkM9Tkz1xnkmXbfSvR7f4H8AtXBkLGj74mMvjM1+VHZpAZ4LM4K/LBWEI9jwP71v1ZEQ6dyvQMf8A/1pmdZnKce/VH1iIsdte4U8VEtY23xOujxtFpWDgKbfjD2YeEhY0OzfjGeLyO/XfnNpAcmcjDwKOXRfU1IyiTRyEkaiz67pb9oJHJb9vVqKfgjLBPyF5Sq9T0KmSUhQmtiQrJGPHVi0DoSabj31G2gW3buHd0pY85lNdcCk8xlNDPXMuSyNiwl+theIb9C7RLIpKvviYy+M6H8qGwSAp6Is19+GP6KxwnggJ/kq6Jht5rnRQA4z9zyRRaXssvyqp5I6Vutv0vkpJaJtnjpz/8B19ytIayazLoAAAAASUVORK5CYII=");
+  }
+  
+  .star > label:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-position: 0 30px;
+    pointer-events: none;
+    opacity: 0;
+  }
+  
+  .star > label:nth-of-type(5):before {
+    width: 120px;
+    left: -120px;
+  }
+  
+  .star > label:nth-of-type(4):before {
+    width: 90px;
+    left: -90px;
+  }
+  
+  .star > label:nth-of-type(3):before {
+    width: 60px;
+    left: -60px;
+  }
+  
+  .star > label:nth-of-type(2):before {
+    width: 30px;
+    left: -30px;
+  }
+  
+  .star > label:nth-of-type(1):before {
+    width: 0;
+    left: 0;
+  }
+  
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi) {
+    .star > label {
+       background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAB4CAMAAACZ62E6AAABAlBMVEUAAACZmZmampr2vSObm5v/yiufn5+ampr1viP1viSZmZn2viOZmZmampqampr2viSampqampqcnJz5vyScnJz3wSf/wyn/xiujo6Oqqqr/0C/1vSOampr2viP2viOampr2viP2vST2viOampqampqampr1vyP3viSampr2vyT4vyX3viSbm5ubm5v5wCT8xSmgoKCampqampr3vyb2wiWenp72viOampqZmZmampr2viP2viP1viSampqbm5v2vyT3viObm5v4vyadnZ34wSSbm5v2viSZmZn2viP2vST2viP2viT1viOZmZn2viT2viX3viT3vyb2vyOZmZn1vSOZmZlNN+fKAAAAVHRSTlMA9uz4PQwS8O7r5+fTw4yMelw2MB0dFRELBgbS+/Hfu7uxqKWdg4N7ZmZMPi8pKRgPs0w7Nhb14drKw6Gck21tXkNDIyMZ1rDLycTBtaqVknlfV0sGP8ZwAAADW0lEQVRYw9zWvYqDQBSG4TPDoCAqKhYKQgoVLFaIgZCkiCBBUqVazv3fyu4aEXWdM85Uy779A+LP58AfTQgw73AwtxFiZIwbxMbUfuB3H4b49YNfZrbGodoI52+cm9hH9sbZwwAXOFbo2zjDsSzWxnecuuvaM8MpdtbEPs7y9azF5phZWrjERaWOPdpLbB81cICrgv3W4mvMLbU6RmFQeA5u5HhFEEbHLdWLsMxvHJXxW16Goh+ZqPyny1Az5j79SsCJoWHsBNAxQ9sNF26bWFuMC8v1LY+mmeTadjaqtaNnnXoxWBcde1nNWnzdb68xrOqvu22/MTzuPutujpJ122NvluSb8tTWk85CclDZQwLS0oa2TQpEKacsJy0kSJaQOKJxROKKxhWJ7zS+k9ijsUdim8Y2ZWNUFBP4pMKfOv8onX9WrsI5gd3VVLXtatxcuU0znGUHCUAS2DgrS6mT6hTzrXEjfIZj5Dk2xKkihqm4wKlQfQRqalhUP9UHo3FIPAG/Et44JVLsDDf0JHmB3OEByOwZES8hSAsviGjBdh3ylh6plmMnW4IyAUVJWcE/76vTell1EIaiMBwIAcWBA9GC0lIdKFXQQUsHVVCklN7ojf3+z3JOxYqK2TH555+K6CJJQtRbr9XtDmCnjH0AX9Va8J+liIMvDtRsCk2pEs6hKVexR2g7KuDihwt5a9MfprY0fkLXU9ZmFLpoJolN6GXKWWfZx0tHCocwKJSxC22ItYUEjmBUJHFjfYz1xQxlfaLiZsBExq2IPtbkNbLtOwwuGgjTLkH43mYtSzam7+1Bsr3nm5uExBQUozEh9V7N7uvmwZcqdpm0C6vJW63bZEuXtbrV2zpDzhrpYLBWMnY1mjV7JWFtMio7zbWniWFxvHnWm1yGxXmOPXP+L3YV2ysjnNhaZNeMcHPvuL27BMnVMaujljBAYyje4niH4g2ONyh+4PiB4gOODyjWcKxh1gZBNoJjEY4R/BLhF4IDEQ4QPBoEoyxH4+bxrUsHyxwxQlg0WHXqYifVLmo67cKY/UtaXFxBV26TLjuHrkp8BPJTMij1xQejdkgO24nf7dBOCRcbzQuNOR9Qs64GzzrfQa8It2oFAA6Zrga9xEeq1KHmLUHIiCAWInsg1x/MLqkMsItF8QAAAABJRU5ErkJggg==");
+    }
+  }
+
+  
+
+
+/* ######################## SELECT BAR CUSTOM  ########################*/
+
+  /* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.comment {
+  width: 60%;
+  height: 120px;
+  padding: 10px;
+  border: 3px solid black;
+  background-color: #fff;
+  font: 1.0em cursive;
+
+}

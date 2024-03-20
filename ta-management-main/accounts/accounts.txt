@@ -1,0 +1,8 @@
+William Miller: Prof and TA; email: william@comp307.com; password: 1234
+Joe Brown: TA and student; email: joe@comp307.com; password: 1234
+Sarah Hall; TA and admin; email: sarah@comp307.com; password: 1234
+Ann Lee: Prof; email: ann@comp307.com; password: 1234
+Mary Smith: student; email: sarah@comp307.com; password: 1234
+Martin Walker: TA; email: martin@comp307.com; password: 1234
+Sophie Moore: Prof and sysop; email: sophie@comp307.com; password: 1234
+John: sysop; email: john@comp307.com; password: jdcomp307
